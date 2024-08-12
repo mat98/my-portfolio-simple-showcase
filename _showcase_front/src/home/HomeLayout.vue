@@ -8,8 +8,8 @@
                 </q-toolbar-title>
             </q-toolbar>
         </q-header>
-        <div class="q-ml-md">
-            <q-page-container class="column ">
+        <div class="q-ml-md q-mt-lg">
+            <q-page-container class="column">
                 <span class="q-pb-sm">{{ topicoPrincipal }}</span>
                 <span class="q-pb-sm">{{ descricaoGeral }}</span>
                 <span class="q-pb-sm">{{ descricaoExperiencia }}</span>
@@ -30,12 +30,19 @@
                 <span>{{ topicoPrincipal }}</span>
                 <span>{{ descricaoGeral }}</span>
             </q-page-container> -->
+
+            <ProfessionalExperience />
         </div>
     </q-layout>
 </template>
 
 <script>
+import ProfessionalExperience from './components/ProfessionalExperience.vue';
+
 export default {
+    components: {
+        ProfessionalExperience
+    },
     data() {
         return {
             titulo: "MatDevFolio</>",
