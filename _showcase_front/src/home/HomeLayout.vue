@@ -1,35 +1,50 @@
 <template>
     <q-layout>
-        <!-- Header -->
-        <q-header class="dark-page">
+        <q-header class="dark-page fixed-top" position="fixed">
             <q-toolbar>
-                <q-toolbar-title>
+                <q-toolbar-title class="text-center text-h5">
                     <span>{{ titulo }}</span>
                 </q-toolbar-title>
+
+                <q-btn @click="changeLanguage('en')" round flat>
+                    <img src="~assets/usa.png" alt="English" width="24">
+                </q-btn>
+                <q-btn @click="changeLanguage('pt')" round flat>
+                    <img src="~assets/brazil.png" alt="Português" width="24">
+                </q-btn>
             </q-toolbar>
         </q-header>
-        <div class="q-ml-md q-mt-lg">
-            <q-page-container class="column">
-                <span class="q-pb-sm">{{ topicoPrincipal }}</span>
-                <span class="q-pb-sm">{{ descricaoGeral }}</span>
-                <span class="q-pb-sm">{{ descricaoExperiencia }}</span>
+        <div class="q-mt-lg">
+            <q-page-container class="column q-ml-md q-mb-md text-center">
+                <div class="text-left q-mx-auto" style="max-width: 600px;">
+                    <p class="row">
+                        <span class="q-pb-sm text-h6 topic">{{ $t('aboutMe') }}</span>
+                    </p>
 
-                <span class="q-pt-md q-pb-md">{{ descricaoStacksPrincipais }}</span>
-                <div v-for="stack in stacksPrincipais" :key="stack" class="row items-center">
-                    <q-icon name="coffee" size="2rem" color="white" />
-                    <span class="q-ml-sm">{{ stack }}</span>
-                </div>
+                    <p class="row">
+                        <span class="q-pb-sm"> {{ $t('introductionHome') }}</span>
+                    </p>
 
-                <span class="q-pt-md q-pb-md">{{ descricaoStacksSecundarias }}</span>
-                <div v-for="stack in stacksSecundarias" :key="stack" class="row items-center">
-                    <q-icon name="coffee" size="2rem" color="white" />
-                    <span class="q-ml-sm">{{ stack }}</span>
+                    <p class="row">
+                        <span class="q-pt-sm">{{ descricaoStacksPrincipais }}</span>
+                    </p>
+
+                    <div v-for="stack in stacksPrincipais" :key="stack" class="row items-center">
+                        <q-icon name="coffee" size="2rem" color="white" />
+                        <span class="q-ml-sm">{{ stack }}</span>
+                    </div>
+
+                    <p class="row q-mt-sm">
+                        <span class="q-pt-sm">{{ descricaoStacksSecundarias }}</span>
+                    </p>
+
+                    <div v-for="stack in stacksSecundarias" :key="stack" class="row items-center">
+                        <q-icon name="coffee" size="2rem" color="white" />
+                        <span class="q-ml-sm">{{ stack }}</span>
+                    </div>
                 </div>
             </q-page-container>
-            <!-- <q-page-container class="column">
-                <span>{{ topicoPrincipal }}</span>
-                <span>{{ descricaoGeral }}</span>
-            </q-page-container> -->
+
 
             <ProfessionalExperience />
         </div>
@@ -38,6 +53,7 @@
 
 <script>
 import ProfessionalExperience from './components/ProfessionalExperience.vue';
+import { changeLanguage } from 'src/_translate/i18nService';
 
 export default {
     components: {
@@ -45,10 +61,10 @@ export default {
     },
     data() {
         return {
+            changeLanguage(lang) {
+                changeLanguage(lang)
+            },
             titulo: "MatDevFolio</>",
-            topicoPrincipal: "Sobre mim",
-            descricaoGeral: "Me chamo Mateus, tenho 26 anos e sou um desenvolvedor que busca frequentemente se aperfeiçoar!",
-            descricaoExperiencia: "No momento tenho 5 anos de experiência e tento dividir meus conhecimentos da seguinte maneira:\n",
             descricaoStacksPrincipais: 'Para trabalhar com plataforma robustas, utilizo essas ferramentas:',
             stacksPrincipais: ['Angular', 'Dotnet ( ASP.NET Core )', 'Nodejs ( Nestjs )'],
             descricaoStacksSecundarias: 'Para desenvolvimento de projetos menores e que me permitem mais liberdade criativa utilizo:',
@@ -65,5 +81,9 @@ body {
 
 span {
     color: #fff
+}
+
+.topic {
+    color: $secondary
 }
 </style>

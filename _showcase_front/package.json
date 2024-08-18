@@ -2,8 +2,8 @@
   "name": "quasar-project",
   "version": "0.0.1",
   "description": "A Quasar Project",
-  "productName": "Quasar App",
-  "author": "mateus.santana <mateus.santana@7comm.com.br>",
+  "productName": "! MatDevFolio",
+  "author": "mateus santos",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
@@ -17,16 +17,17 @@
     "core-js": "^3.31.1",
     "quasar": "^2.16.0",
     "vue": "^3.4.18",
+    "vue-i18n": "^9.14.0",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
+    "@quasar/app-webpack": "^4.0.0-beta.13",
     "eslint": "^8.57.0",
-    "eslint-plugin-vue": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.27.0",
     "eslint-webpack-plugin": "^3.1.1",
-    "eslint-config-prettier": "^9.0.0",
-    "prettier": "^3.0.3",
-    "@quasar/app-webpack": "^4.0.0-beta.13"
+    "prettier": "^3.3.3"
   },
   "browserslist": [
     "last 10 Chrome versions",
