@@ -15,39 +15,41 @@
             </q-toolbar>
         </q-header>
         <div class="q-mt-lg">
-            <q-page-container class="column q-ml-md q-mb-md text-center">
-                <div class="text-left q-mx-auto" style="max-width: 600px;">
-                    <p class="row">
+            <q-page-container class="column q-ml-md q-mb-md text-left">
+                <div class="text-left q-mx-auto" style="max-width: 600px; text-align: left;">
+                    <p class="row" style="text-align: left; justify-content: start">
                         <span class="q-pb-sm text-h6 topic">{{ $t('aboutMe') }}</span>
                     </p>
 
-                    <p class="row">
-                        <span class="q-pb-sm"> {{ $t('introductionHome') }}</span>
+                    <p class="row" style="text-align: left;">
+                        <span class="q-pb-sm">{{ $t('introductionHome') }}</span>
                     </p>
 
-                    <p class="row">
+                    <p class="row" style="text-align: left; justify-content: start">
                         <span class="q-pt-sm">{{ descricaoStacksPrincipais }}</span>
                     </p>
 
-                    <div v-for="stack in stacksPrincipais" :key="stack" class="row items-center">
+                    <div v-for="stack in stacksPrincipais" :key="stack" class="row items-start"
+                        style="justify-content: flex-start; text-align: left;">
                         <q-icon name="coffee" size="2rem" color="white" />
                         <span class="q-ml-sm">{{ stack }}</span>
                     </div>
 
                     <p class="row q-mt-sm">
-                        <span class="q-pt-sm">{{ descricaoStacksSecundarias }}</span>
+                        <span class=" q-pt-sm">{{ descricaoStacksSecundarias }}</span>
                     </p>
 
-                    <div v-for="stack in stacksSecundarias" :key="stack" class="row items-center">
+                    <div v-for="stack in stacksSecundarias" :key="stack" class="row items-start"
+                        style="justify-content: flex-start; text-align: left;">
                         <q-icon name="coffee" size="2rem" color="white" />
                         <span class="q-ml-sm">{{ stack }}</span>
                     </div>
                 </div>
             </q-page-container>
 
-
             <ProfessionalExperience />
         </div>
+
     </q-layout>
 </template>
 
