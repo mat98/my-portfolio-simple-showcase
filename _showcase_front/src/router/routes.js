@@ -1,15 +1,12 @@
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
-    ]
+    redirect: '/home'
   },
   {
     path: '/home',
     component: () => import('src/home/HomeLayout.vue'),
-    children: [ ]
+    children: []
   },
   {
     path: '/:catchAll(.*)*',

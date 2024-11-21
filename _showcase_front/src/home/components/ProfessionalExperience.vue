@@ -34,19 +34,9 @@
             </q-timeline>
         </div>
 
-        <div class="container">
+        <!-- <div class="container">
             <div class="sliding-background"></div>
-        </div>
-
-
-    </div>
-
-    <div class="text-center flex-center">
-        <div class="cards q-mt-md column">
-            <span>
-                Angular
-            </span>
-        </div>
+        </div> -->
     </div>
 
 </template>

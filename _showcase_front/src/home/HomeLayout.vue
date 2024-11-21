@@ -26,7 +26,7 @@
                     </p>
 
                     <p class="row" style="text-align: left; justify-content: start">
-                        <span class="q-pt-sm">{{ descricaoStacksPrincipais }}</span>
+                        <span class="q-pt-sm"> {{ $t('descricaoStacksPrincipais') }}</span>
                     </p>
 
                     <div v-for="stack in stacksPrincipais" :key="stack" class="row items-start"
@@ -35,8 +35,8 @@
                         <span class="q-ml-sm">{{ stack }}</span>
                     </div>
 
-                    <p class="row q-mt-sm">
-                        <span class=" q-pt-sm">{{ descricaoStacksSecundarias }}</span>
+                    <p class="row" style="text-align: left; justify-content: start">
+                        <span class="q-pt-sm"> {{ $t('descricaoStacksSecundarias') }}</span>
                     </p>
 
                     <div v-for="stack in stacksSecundarias" :key="stack" class="row items-start"
@@ -67,9 +67,7 @@ export default {
                 changeLanguage(lang)
             },
             titulo: "MatDevFolio</>",
-            descricaoStacksPrincipais: 'Para trabalhar com plataforma robustas, utilizo essas ferramentas:',
             stacksPrincipais: ['Angular', 'Dotnet ( ASP.NET Core )', 'Nodejs ( Nestjs )'],
-            descricaoStacksSecundarias: 'Para desenvolvimento de projetos menores e que me permitem mais liberdade criativa utilizo:',
             stacksSecundarias: ['Vuejs <3', 'Pyhton', 'Nodejs ( Nestjs ) ( com menos regras  estruturais )'],
         }
     }
