@@ -12,9 +12,6 @@ export default configure((ctx) => {
     css: [
       'app.scss'
     ],
-    build: {
-      publicPath: '/'
-    },
     extras: [
       'roboto-font',
       'material-icons',
