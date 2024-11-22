@@ -3,7 +3,8 @@
         <q-header class="dark-page fixed-top" position="fixed">
             <q-toolbar>
                 <q-toolbar-title class="text-center text-h5">
-                    <span class="text-h4">{{ titulo }}</span>
+                    <span v-if="$q.screen.lt.md" class="text-h6">{{ titulo }}</span>
+                    <span v-else class="text-h4">{{ titulo }}</span>
                 </q-toolbar-title>
 
                 <q-btn @click="changeLanguage('en')" round flat>

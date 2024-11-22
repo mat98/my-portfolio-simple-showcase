@@ -5,12 +5,16 @@
                 <q-timeline-entry heading>
                     <span></span>
                     <br>
-                    <span class="text-h4">
-                        {{ $t('timelineTitle') }}
+                    <span v-if="$q.screen.lt.md" class="text-h5">{{ $t('timelineTitle') }}</span>
+                    <span v-else class="text-h4">{{ $t('timelineTitle') }}</span>
+                </q-timeline-entry>
+
+                <q-timeline-entry heading class="custom-timeline-title">
+                    <span :class="$q.screen.lt.md ? 'text-h5' : 'text-h4'">
+                        Junior Software Engineer
                     </span>
                 </q-timeline-entry>
 
-                <q-timeline-entry heading class="custom-timeline-title">Junior Software Engineer</q-timeline-entry>
 
                 <q-timeline-entry title="7COMm" subtitle="16/09/2019" side="left" class="custom-timeline-title">
                     <span>
@@ -24,7 +28,12 @@
                     </span>
                 </q-timeline-entry>
 
-                <q-timeline-entry heading class="custom-timeline-title">Mid-Level Software Engineer</q-timeline-entry>
+
+                <q-timeline-entry heading class="custom-timeline-title">
+                    <span :class="$q.screen.lt.md ? 'text-h5' : 'text-h4'">
+                        Mid-Level Software Engineer
+                    </span>
+                </q-timeline-entry>
 
                 <q-timeline-entry title="7COMm" subtitle="17/03/2022" side="right" class="custom-timeline-title">
                     <span>
