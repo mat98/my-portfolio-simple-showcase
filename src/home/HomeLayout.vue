@@ -3,7 +3,7 @@
         <q-header class="dark-page fixed-top" position="fixed">
             <q-toolbar>
                 <q-toolbar-title class="text-center text-h5">
-                    <span>{{ titulo }}</span>
+                    <span class="text-h4">{{ titulo }}</span>
                 </q-toolbar-title>
 
                 <q-btn @click="changeLanguage('en')" round flat>
@@ -16,8 +16,8 @@
         </q-header>
         <div class="q-mt-lg">
             <q-page-container class="column q-ml-md q-mb-md text-left">
-                <div class="text-left q-mx-auto" style="max-width: 600px; text-align: left;">
-                    <p class="row" style="text-align: left; justify-content: start">
+                <div class="text-left q-mx-auto" style="max-width: 60rem; text-align: left;">
+                    <p class="row text-h3" style="text-align: left; justify-content: start">
                         <span class="q-pb-sm text-h6 topic">{{ $t('introduction') }}</span>
                     </p>
 
@@ -80,7 +80,8 @@ body {
 }
 
 span {
-    color: #fff
+    color: #fff;
+    font-size: 1rem;
 }
 
 .topic {

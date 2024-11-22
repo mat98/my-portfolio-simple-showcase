@@ -5,7 +5,7 @@
                 <q-timeline-entry heading>
                     <span></span>
                     <br>
-                    <span>
+                    <span class="text-h4">
                         {{ $t('timelineTitle') }}
                     </span>
                 </q-timeline-entry>
