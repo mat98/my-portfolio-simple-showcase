@@ -4,7 +4,7 @@ const messages = {
     en: {
         welcome: 'Welcome',
         goodbye: 'Goodbye',
-        aboutMe: 'About Me',
+        introduction: 'Hi, I’m Matt. Nice to meet you.',
         timelineTitle: '! My Work Experience ',
         introductionHome: "My name is Mateus, I'm 26 years old and I'm a developer who often seeks to improve myself! I currently have 5 years of experience and I try to share my knowledge as follows:",
         sevenCommFirstExperience: "Where it all began... 🚀 I started my career as a developer at 7COMm, where they opened their doors to me, believing in my potential. I joined as an intern, where I worked on an employee recognition program, which served as a great learning base, I worked with technologies such as AngularJS on the frontend (yes Angular 1) lol, and also with Nodejs on the backend.",
@@ -16,7 +16,7 @@ const messages = {
     pt: {
         welcome: 'Bem-vindo',
         goodbye: 'Adeus',
-        aboutMe: 'Sobre Mim',
+        introduction: 'Olá, me chamo Mateus. Prazer em conhecer você.',
         timelineTitle: '! Experiência Profissional',
         introductionHome: "Me chamo Mateus, tenho 26 anos e sou um desenvolvedor que busca frequentemente se aperfeiçoar! No momento tenho 5 anos de experiência e tento dividir meus conhecimentos da seguinte maneira:",
         sevenCommFirstExperience: "Onde tudo começou... 🚀 Iniciei minha carreira como desenvolvedor a partir da 7COMm, onde abriu as portas acreditando no meu potencial, entrei para uma vaga de estagiário, onde atuei em um programa de reconhecimento de funcionários, onde serviu com uma base de grande aprendizado, trabalhei com tecnologias como AngularJS no frontend (sim o Angular 1) rs, e também com o Nodejs no backend.",

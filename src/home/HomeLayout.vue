@@ -18,7 +18,7 @@
             <q-page-container class="column q-ml-md q-mb-md text-left">
                 <div class="text-left q-mx-auto" style="max-width: 600px; text-align: left;">
                     <p class="row" style="text-align: left; justify-content: start">
-                        <span class="q-pb-sm text-h6 topic">{{ $t('aboutMe') }}</span>
+                        <span class="q-pb-sm text-h6 topic">{{ $t('introduction') }}</span>
                     </p>
 
                     <p class="row" style="text-align: left;">
