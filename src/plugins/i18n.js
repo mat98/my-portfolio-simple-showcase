@@ -11,7 +11,7 @@ const messages = {
         qualicorpFirstExperience: 'In search of new challenges, I migrated to a new company, also being a consultancy I worked with the client Qualicorp, where I found a huge challenge that would be to create a system for selling health plans, I had my first professional contact with Mobile technologies, working in Flutter, where I fell in love with this world, in addition I worked in the backend of new resources, in addition to the sales site using Vuejs.',
         sevenCommSecondExperience: 'Returning to 7COMm with a new perspective, I first worked on a project where I was part of the team that created and implemented a payment scanning system in .NET, focused on improving payment dynamics and increasing efficiency in financial operations. A rules engine was also developed that automatically updates the rates of banking correspondents according to predefined criteria.',
         descricaoStacksPrincipais: 'I use these tools to work with robust platforms:',
-        descricaoStacksSecundarias: 'I use smaller projects that allow me more creative freedom:'
+        descricaoStacksSecundarias: 'I have complementary (non-specialist) knowledge of the cloud to make the application available and guarantee its lifecycle:'
     },
     pt: {
         welcome: 'Bem-vindo',
@@ -23,7 +23,7 @@ const messages = {
         qualicorpFirstExperience: 'Em busca de novos desafios, migrei para uma nova empresa, também sendo uma consultoria atuei junto ao cliente Qualicorp, onde encontrei um desafio enorme que seria criar um sistema para venda de planos de saúde, tive meu primeiro contato profissional com tecnologias Mobile, atuando em Flutter, onde me apaixonei por esse mundo, além disso atuei no backend de novos recursos, além do site de vendas utilizando o Vuejs.',
         sevenCommSecondExperience: 'Voltando para a 7COMm com uma nova perpectiva, trabalhei primeiro em um projeto onde fiz parte do time que criou e implementou um sistema de varrimento de pagamentos em .NET, focado em melhorar a dinâmica de pagamento e aumentar a eficiência nas operações financeiras. Também foi desenvolvido um motor de regras que atualiza automaticamente as taxas das correspondentes bancárias conforme critérios pré-definidos.',
         descricaoStacksPrincipais: 'Para trabalhar com plataforma robustas, utilizo essas ferramentas:',
-        descricaoStacksSecundarias: 'Para desenvolvimento de projetos menores e que me permitem mais liberdade criativa utilizo:'
+        descricaoStacksSecundarias: 'Tenho Conhecimentos complementares ( não especialista ) em nuvem para colocar a aplicação disponível e garantir o ciclo de vida dela:'
     }
 }
 

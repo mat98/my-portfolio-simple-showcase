@@ -68,8 +68,8 @@ export default {
                 changeLanguage(lang)
             },
             titulo: "MatDevFolio</>",
-            stacksPrincipais: ['Angular', 'Dotnet ( ASP.NET Core )', 'Nodejs ( Nestjs )'],
-            stacksSecundarias: ['Vuejs <3', 'Pyhton', 'Nodejs ( Nestjs ) ( com menos regras  estruturais )'],
+            stacks: ['Angular', 'Dotnet ( ASP.NET Core )', 'Nodejs ( Nestjs )', 'Flutter', 'Vuejs'],
+            stacksSecundarias: ['AWS Cloud', 'Azure Cloud'],
         }
     }
 }
