@@ -56,7 +56,7 @@
 
 <script>
 import ProfessionalExperience from './components/ProfessionalExperience.vue';
-import { changeLanguage } from 'src/_translate/i18nService';
+import { changeLanguage as setLanguage } from 'src/_translate/i18nService';
 
 export default {
     components: {
@@ -65,7 +65,7 @@ export default {
     data() {
         return {
             changeLanguage(lang) {
-                changeLanguage(lang)
+                setLanguage(lang)
             },
             titulo: "MatDevFolio</>",
             stacksPrincipais: ['Angular', 'Dotnet ( ASP.NET Core )', 'Nodejs ( Nestjs )', 'Flutter', 'Vuejs'],
