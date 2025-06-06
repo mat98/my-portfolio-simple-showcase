@@ -40,6 +40,11 @@
                         {{ $t('sevenCommSecondExperience') }}
                     </span>
                 </q-timeline-entry>
+                <q-timeline-entry title="Next Level Tech" subtitle="01/07/2023" side="left" class="custom-timeline-title">
+                    <span>
+                        {{ $t('nextLevelExperience') }}
+                    </span>
+                </q-timeline-entry>
             </q-timeline>
         </div>
 
